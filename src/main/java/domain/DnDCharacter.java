@@ -20,6 +20,7 @@ public class DnDCharacter {
 	private String name;
 	private String className;
 	private String race;
+	private String playerName;
 
 	public String getId() {
 		return id;
@@ -68,6 +69,14 @@ public class DnDCharacter {
 	public void setRace(String race) {
 		this.race = race;
 	}
+	
+	public String getPlayerName() {
+		return playerName;
+	}
+	
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
 
 	@Override
 	public String toString() {
@@ -78,6 +87,7 @@ public class DnDCharacter {
 				+ "name:'" + name + '\''
 				+ "className:'" + className + '\''
 				+ "race:'" + race + '\''
+				+ "playerName:'" + playerName + '\''
 				+ "}";
 	}
 	
@@ -91,6 +101,7 @@ public class DnDCharacter {
 				Objects.equals(other.lastModifiedDate, lastModifiedDate) &&
 				Objects.equals(other.name, name) &&
 				Objects.equals(other.className, className) &&
-				Objects.equals(other.race, race);
+				Objects.equals(other.race, race) &&
+				Objects.equals(other.playerName, playerName);
 	}
 }
