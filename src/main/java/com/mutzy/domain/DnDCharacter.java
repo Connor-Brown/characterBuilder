@@ -1,4 +1,4 @@
-package domain;
+package com.mutzy.domain;
 
 import java.util.Date;
 import java.util.Objects;
@@ -81,13 +81,13 @@ public class DnDCharacter {
 	@Override
 	public String toString() {
 		return "D&DCharacter:{"
-				+ "id:'" + id + '\''
-				+ "createdDate" + createdDate + '\''
-				+ "lastModifiedDate:'" + lastModifiedDate + '\''
-				+ "name:'" + name + '\''
-				+ "className:'" + className + '\''
-				+ "race:'" + race + '\''
-				+ "playerName:'" + playerName + '\''
+				+ "id:'" + id + "',"
+				+ "createdDate" + createdDate + "',"
+				+ "lastModifiedDate:'" + lastModifiedDate + "',"
+				+ "name:'" + name + "',"
+				+ "className:'" + className + "',"
+				+ "race:'" + race + "',"
+				+ "playerName:'" + playerName + "'"
 				+ "}";
 	}
 	
